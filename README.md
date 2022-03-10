@@ -1,4 +1,4 @@
-# UNeXt
+# On-the-Fly Adaptation
 
 Official Pytorch Code base for [On-the-Fly Test-time Adaptation for Medical Image Segmentation]()
 
@@ -34,14 +34,14 @@ conda activate otf
 
 ## Datasets
 
-1) CHASE - [Link](https://challenge.isic-archive.com/data/)
+1) CHASE - [Link](https://blogs.kingston.ac.uk/retinal/chasedb1/)
 2) HRF - [Link](https://challenge.isic-archive.com/data/)
-3) RITE - [Link](https://challenge.isic-archive.com/data/)
-4) BraTS 2019 - [Link](https://www.kaggle.com/aryashah2k/breast-ultrasound-images-dataset)
+3) RITE - [Link](https://www5.cs.fau.de/research/data/fundus-images/)
+4) BraTS 2019 - [Link](https://www.med.upenn.edu/cbica/brats2019/data.html)
 
 ## Data Format
 
-Make sure to put the files as the following structure (e.g. the number of classes is 2):
+Make sure the datasets are arranged in the following structure:
 
 ```
 inputs
@@ -60,8 +60,6 @@ inputs
         |   ├── ...
  
 ```
-
-For binary segmentation problems, just use folder 0.
 
 ## Validation
 
@@ -93,10 +91,11 @@ python val_adaptiveunet.py --name chase_adaptiveunet --target rite --dpg "./pret
 
 ## Training Adaptive-UNet
 
+Coming soon!
 
 ## Volumetric Segmentation Experiments:
 
-For code of volumetric segmentation, click [here]()
+Coming Soon!
 
 ### Acknowledgements:
 

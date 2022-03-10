@@ -84,7 +84,8 @@ def main():
     priormodel = archs.__dict__['priorunet'](config['num_classes'],
                                            config['input_channels'],
                                            config['deep_supervision'])
-    priormodel.load_state_dict(torch.load(args.dpg))
+    # print(args.dpg)
+    priormodel.load_state_dict(torch.load("%smodel.pth"%args.dpg))
     priormodel.eval()
 
     
